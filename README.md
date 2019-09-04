@@ -5,8 +5,8 @@
 1. Recognize vocabulary term: "hash of hashes"
 2. Recognize that "Hashes of Hashes" are trees
 3. Create an `Hash` of `Hash`es
-4. Read scalar data from an array of `Hash`es
-5. Modify scalar data in an array of `Hash`es
+4. Read scalar data from an `Hash` of `Hash`es
+5. Modify scalar data in an `Hash` of `Hash`es
 
 ## Introduction
 
