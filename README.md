@@ -4,9 +4,9 @@
 
 1. Recognize vocabulary term: "hash of hashes"
 2. Recognize that "Hashes of Hashes" are trees
-3. Create an `Hash` of `Hash`es
-4. Read scalar data from an `Hash` of `Hash`es
-5. Modify scalar data in an `Hash` of `Hash`es
+3. Create a `Hash` of `Hash`es
+4. Read scalar data from a `Hash` of `Hash`es
+5. Modify scalar data in a `Hash` of `Hash`es
 
 ## Introduction
 
@@ -30,8 +30,8 @@ Thus, we can render any given individual like so:
 # Not valid code
 {
   name: "",
-  mother: # THE SAME TYPE THING - something with a name, mother and father key,
-  father: # THE SAME TYPE THING - something with a name, mother and father key
+  mother: # THE SAME TYPE OF THING - something with a name, mother, and father key,
+  father: # THE SAME TYPE OF THING - something with a name, mother, and father key
 }
 ```
 
@@ -53,7 +53,7 @@ HoH's property of being made up of nodes that have the same structure of each
 other makes them very popular in programming interviews. Much of the vocabulary
 used to talk of these "node collections" is described by a mathematical
 discipline called "graph theory." We're not going to discuss that vocabulary in
-this lesson. But if you hear "leaf," "node," or "edge," you're starting to to
+this lesson. But if you hear "leaf," "node," or "edge," you're starting to
 approach "graph theory."
 
 In the age of social networking being able to build "graphs" of "nodes" has
@@ -180,7 +180,7 @@ child = {
 }
 
 child[:mother][:father] = "Raymond Reynolds"
-child # => => {:name=>"Carrie Fisher", :mother=>{:name=>"Debbie Reynolds", :mother=>{:name=>"Maxene Reynolds"}, :father=>"Raymond Reynolds"}, :father=>{:name=>"Eddie Fisher", :mother=>{}, :father=>{}}}
+child #=> {:name=>"Carrie Fisher", :mother=>{:name=>"Debbie Reynolds", :mother=>{:name=>"Maxene Reynolds"}, :father=>"Raymond Reynolds"}, :father=>{:name=>"Eddie Fisher", :mother=>{}, :father=>{}}}
 child[:mother][:father] #=> "Raymond Reynolds"
 ```
 
@@ -206,7 +206,8 @@ child = {
 }
 
 child[:father][:mother] = {name: "Gitte Winokur", mother: {}, father: {}}
-child #=> => {:name=>"Carrie Fisher", :mother=>{:name=>"Debbie Reynolds", :mother=>{:name=>"Maxene Reynolds"}, :father=>{:name=>"Raymond Reynolds"}}, :father=>{:name=>"Eddie Fisher", :mother=>{:name=>"Gitte Winokur", :mother=>{}, :father=>{}}, :father=>{}}}
+child #=> {:name=>"Carrie Fisher", :mother=>{:name=>"Debbie Reynolds", :mother=>{:name=>"Maxene Reynolds"}, :father=>{:name=>"Raymond Reynolds"}}, :father=>{:name=>"Eddie Fisher", :mother=>{:name=>"Gitte Winokur", :mother=>{}, :father=>{}}, :father=>{}}}
+child[:father][:mother] #=> {name: "Gitte Winokur", mother: {}, father: {}}
 ```
 
 While AoAs or AoHs are frequently described using ONLY literal syntax, with a
