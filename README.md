@@ -220,6 +220,16 @@ As a closing point, it's not a ***rule*** that all "nodes" in a HoH are all the
 same. It's often true, but sometimes not. In the lab, we're going to provide
 a simple HoH which breaks the _tendency_ of all nodes to be alike.
 
+## Instructions
+
+For this lab, your task is to build a nested HoH of the classification of
+biological life on Earth based on these commented-out snippets assigned to
+PORTION_1-PORTION_4. Return that HoH as the return value for the method
+"naming_system."
+
+Take a look at `lib/hoh.rb` to get started. The tests will guide your
+construction.
+
 ## Conclusion
 
 Congratulations, you've learned to use your third nested data structure: the
