@@ -213,6 +213,12 @@ While AoAs or AoHs are frequently described using ONLY literal syntax, with a
 HoH, it might be more readable to define the nodes in single-instance variables
 and then use the short variables to build the HoH.
 
+## HoH in the Wild
+
+As a closing point, it's not a ***rule*** that all "nodes" in a HoH are all the
+same. It's often true, but sometimes not. In the lab, we're going to provide
+a simple HoH which breaks the _tendency_ of all nodes to be alike.
+
 ## Conclusion
 
 Congratulations, you've learned to use your third nested data structure: the
