@@ -62,7 +62,6 @@ def naming_system
           }
         }
       }
- 
     }
     return hoh
 end
